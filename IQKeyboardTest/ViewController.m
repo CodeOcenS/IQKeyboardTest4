@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "ViewController2.h"
 
 @interface ViewController ()
 
@@ -15,7 +16,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+}
+- (IBAction)tapNextButton:(UIButton *)sender {
+    ViewController2 *vc = [[ViewController2 alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 
